@@ -1,0 +1,93 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug List",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=regcmd",
+                    "--package=regcmd"
+                ],
+                "filter": {
+                    "name": "regcmd",
+                    "kind": "bin"
+                }
+            },
+            "args": ["list"]
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug Register",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=regcmd",
+                    "--package=regcmd"
+                ],
+                "filter": {
+                    "name": "regcmd",
+                    "kind": "bin"
+                }
+            },
+            "args": ["register", "-n", "test", "-c", "ls", "-d", "list"]
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug Register2",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=regcmd",
+                    "--package=regcmd"
+                ],
+                "filter": {
+                    "name": "regcmd",
+                    "kind": "bin"
+                }
+            },
+            "args": ["register"]
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug Delete",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=regcmd",
+                    "--package=regcmd"
+                ],
+                "filter": {
+                    "name": "regcmd",
+                    "kind": "bin"
+                }
+            },
+            "args": ["delete", "test"]
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug Copy",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=regcmd",
+                    "--package=regcmd"
+                ],
+                "filter": {
+                    "name": "regcmd",
+                    "kind": "bin"
+                }
+            },
+            "args": ["copy", "test"]
+        }
+    ]
+}
