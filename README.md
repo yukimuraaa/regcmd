@@ -1,10 +1,10 @@
 # regcmd
-Tools for recording and reusing commands.　　
-In Linux, you can use the "up" and "down" commands, the history command, and Ctrl+R to search.　　
-However, it is not very effective for commands that are not the last command entered, are complex, or are used frequently.　　
-This tool solves these problems by saving the command to a file (~/.command).　　
+Tools for recording and reusing commands.  
+In Linux, you can use the "up" and "down" commands, the history command, and Ctrl+R to search.  
+However, it is not very effective for commands that are not the last command entered, are complex, or are used frequently.  
+This tool solves these problems by saving the command to a file (~/.command).  
 
-Aliases are advantageous for short commands, but if a shell must be created, shell file management can be complicated.　　
+Aliases are advantageous for short commands, but if a shell must be created, shell file management can be complicated.  
 Consolidating them into regcmd reduces management costs.　　
 
 # Usage
