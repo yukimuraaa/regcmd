@@ -114,7 +114,7 @@ fn register(
     // 登録
     if is_overwrite {
         command_manager::register(workspace_dir, command)?;
-        println!("registed {regist_name}");
+        println!("registered {regist_name}");
     }
     Ok(())
 }

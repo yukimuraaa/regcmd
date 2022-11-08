@@ -23,14 +23,14 @@ $ regcmd register
 name: ll
 command: ls -al
 description: show file list
-registed ll
+registered ll
 ```
 
 option
 ```
 $ regcmd register -n root_du -c "du -h -d 1 /"
 description(option):
-registed root_du
+registered root_du
 ```
 
 ## Delete
